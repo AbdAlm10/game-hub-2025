@@ -23,8 +23,8 @@ const GameGrid = ({ selectedGenre }: Props) => {
       >
         {isLoading &&
           skeletons.map((skeletons) => (
-            <GameCardContauner>
-              <GameCardSkeleton key={skeletons} />
+            <GameCardContauner key={skeletons}>
+              <GameCardSkeleton />
             </GameCardContauner>
           ))}
         {data.map((game) => (
