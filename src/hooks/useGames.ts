@@ -2,12 +2,7 @@ import { useQuery } from "react-query";
 import { GameQuery } from "../App";
 import { FetchingResponse } from "../services/api-client";
 import apiClient from "../services/api-client";
-
-export interface Platform {
-  id: number;
-  name: string;
-  slug: string;
-}
+import { Platform } from "./usePlatforms";
 
 export interface Game {
   id: number;
