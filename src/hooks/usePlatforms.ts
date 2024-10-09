@@ -6,8 +6,8 @@ import ms from "ms";
 const apiClient = new APIClient<Platform>("/platforms/lists/parents");
 
 export interface Platform {
-  id: number;
-  name: string;
+  id?: number;
+  name?: string;
   slug: string;
 }
 

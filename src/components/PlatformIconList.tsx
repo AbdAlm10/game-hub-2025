@@ -14,7 +14,7 @@ import { Platform } from "../hooks/usePlatforms";
 import { IconType } from "react-icons";
 
 interface Props {
-  platform: Platform[];
+  platform?: Platform[];
 }
 
 const PlatformIconList = ({ platform }: Props) => {
@@ -33,7 +33,7 @@ const PlatformIconList = ({ platform }: Props) => {
   return (
     <>
       <HStack marginY={1}>
-        {platform.map((platform) => (
+        {platform?.map((platform) => (
           <Icon
             key={platform.id}
             as={iconMap[platform.slug]}
